@@ -28,6 +28,7 @@ Users system is tracking the user by allow the owner to:
 - change the database name for the name you want and create a detabase with the same name in you database system (mysql)
 - then run instruction (php artisan migrate)
 - if you faced any error in command window please run (composer install or composer update)
+- you man also need to run (php artisan key:generate)
 
 # with my best wishes :smiling_face_with_three_hearts:
 
