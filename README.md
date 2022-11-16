@@ -1,5 +1,5 @@
 <p align="center">Nixope users system</p>
-<i align="center">Made by ~ Nagwa Ali</i>
+<p align="center"><i>Made by ~ Nagwa Ali</i></p>
 
 ## About creator
 
