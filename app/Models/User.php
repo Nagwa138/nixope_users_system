@@ -15,9 +15,7 @@ class User extends Authenticatable
     use LaratrustUserTrait;
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $dispatchesEvents = [
-        'creating' => UserCreatedEvent::class,
-    ];
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -47,5 +45,9 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+    ];
+
+    protected $dispatchesEvents = [
+        'created' => UserCreatedEvent::class,
     ];
 }

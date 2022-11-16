@@ -18,6 +18,6 @@ class SendMailToUserListener implements ShouldQueue
      */
     public function handle(UserCreatedEvent $event): void
     {
-        # todo :: 'Sending Email to user email : ' . $event->user->email
+        // todo :: Sending Email to user email
     }
 }
