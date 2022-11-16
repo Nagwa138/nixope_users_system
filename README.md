@@ -29,6 +29,7 @@ Users system is tracking the user by allow the owner to:
 - then run instruction (php artisan migrate)
 - if you faced any error in command window please run (composer install or composer update)
 - you man also need to run (php artisan key:generate)
+- after creating user run (php artisan queue:work)
 
 # with my best wishes :smiling_face_with_three_hearts:
 
