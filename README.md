@@ -31,6 +31,8 @@ Users system is tracking the user by allow the owner to:
 - you man also need to run (php artisan key:generate)
 - after creating user run (php artisan queue:work)
 
+Postman Collection : https://github.com/Nagwa138/nixope_users_system_postman_collection
+
 # with my best wishes :smiling_face_with_three_hearts:
 
 
