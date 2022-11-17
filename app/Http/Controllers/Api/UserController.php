@@ -61,7 +61,10 @@ class UserController extends BasicController
                 $input['password'] = bcrypt($input['password']);
             }
             $user->update($input);
-            $user->syncRoles($request['roles']);
+            if ($request->has('roles'))
+            {
+                $user->syncRoles($request['roles']);
+            }
             return $this->sendResponse(new UserResource($user), 'User updated success!');
         } catch (\Throwable $exception) {
             return $this->sendError('Error occurred', ['error' => $exception->getMessage()],true);
